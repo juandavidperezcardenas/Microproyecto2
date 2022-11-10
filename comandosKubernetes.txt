@@ -1,0 +1,21 @@
+Power Shell
+
+PS /home/jhonnier> az aks get-credentials -g aks -n aks-miniproyecto2
+Merged "AKS-Miniproyecto2" as current context in /home/jhonnier/.kube/config
+
+PS /home/jhonnier> kubectl config current-context
+AKS-Miniproyecto2
+
+PS /home/jhonnier> kubectl get all
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   10.0.0.1     <none>        443/TCP   18m
+
+CLI de Azure
+
+az aks get-credentials --resource-group aks --name aks-miniproyecto2
+
+Verificar conexión al clúster
+
+az group list --output table
+
+az aks list --output table
